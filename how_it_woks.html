@@ -7,13 +7,121 @@
     <title>S.I.A.T.I.</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1 class="text-3xl">¿Como funciona?</h1>
-    <div>
-      <p>"Nuestro trabajo consiste en</p>
+  <header>
+    <img
+      src="https://www.asuncion.gov.py/wp-content/uploads/2020/07/1500x500.jpg"
+      alt="Asuncion"
+    />
+  </header>
+  <h1 class="my-14 text-6xl text-center text-blue-200">
+    Sistema Inteligente de Alerta Temprana de Inundaciones
+  </h1>
+  <body class="bg-cyan-900">
+    <h1 class="my-10 text-4xl text-blue-300 text-center">¿Como funciona?</h1>
+    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+      <p>
+        Nuestro trabajo consiste en alertar a la poblacion sobre la crecida del
+        rio, cuando este sobrepasa los niveles que pueden afectar a las
+        viviendas riberenhas. El sistema recoje informacion de las estaciones
+        hidrometricas y envia un mensaje a las personas registradas via
+        WhatsApp.<br /><br />
+        Cuando el rio alcanza los 4,50 metros de altura se da aviso de alerta
+        amarilla, lo cual significa que el nivel del rio esta subiendo y ha
+        salido de los parametros normales. A los 5 metros se envia la alerta
+        naranja, esto implica que agua podria afectar a cierto numero de
+        viviendas. La alerta roja aparece cuando el nivel llega a los 6 metros,
+        la inundacion ya compromete a un gran sector de la poblacion de los
+        banhados, puede ser necesario evacuar toda la zona.
+      </p>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDI74LGb7wtw1q5gQD4cvUDjmCsqOj_wqbGrwmZPADZzZa8ymp26jkWuzpzG7aVRN6BO0&usqp=CAU"
+        class="mt-20"
+        src="https://www.ready.gov/sites/default/files/styles/large/public/2021-04/featured_illustration_floods_warning_spanish.png?itok=0bOF6TCV"
+        width="900"
+        height="900"
       />
     </div>
+    <h1 class="my-10 text-4xl text-blue-300 text-center">A.P.I.</h1>
+    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+      <p>
+        Las API son mecanismos que permiten a dos componentes de software
+        comunicarse entre sí mediante un conjunto de definiciones y protocolos.
+        <br /><br />
+        API significa “interfaz de programación de aplicaciones”. La interfaz
+        puede considerarse como un contrato de servicio entre dos aplicaciones.
+        Este contrato define cómo se comunican entre sí mediante solicitudes y
+        respuestas. La documentación de su API contiene información sobre cómo
+        los desarrolladores deben estructurar esas solicitudes y respuestas.<br /><br />
+        La arquitectura de las API suele explicarse en términos de cliente y
+        servidor. La aplicación que envía la solicitud se llama cliente, y la
+        que envía la respuesta se llama servidor.
+      </p>
+      <img
+        class="mt-24"
+        src="https://www.servicetonic.com/wp-content/uploads/2020/10/API-Interface-Servicetonic.png"
+        width="800"
+        height="800"
+      />
+    </div>
+    <h1 class="my-10 text-4xl text-blue-300 text-center">Chat Bot</h1>
+    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+      <img
+        class="mt-10"
+        src="https://cdn-icons-png.flaticon.com/512/2040/2040946.png"
+        width="500"
+        height="300"
+      />
+      <p>
+        Podemos definir un chatbot como un asistente que se comunica con los
+        usuarios a través de mensajes de texto. En muchas otras ocasiones, toma
+        forma convirtiéndose en un compañero virtual que se integra en sitios
+        web y aplicaciones conversando y ayudando a los usuarios.<br /><br />
+
+        Se trata de una tecnología que permite al usuario mantener una
+        conversación a través de un software que se integra en un determinado
+        sistema de mensajería, como WhatsApp.<br /><br />
+
+        El sistema está programado para que interactúe con el cliente y le
+        resuelva dudas, pero sin que haya una persona física contestando. Tienen
+        la ventaja de que están disponibles siempre para resolver las dudas de
+        los usuarios que quieran contactar contigo a cualquier hora del día.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 my-20">
+      <div class="my-10 text-center">
+        <button class="text-blue-50 text-2xl" type="button">
+          <a href="wa.me/595982363068" target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+              width="250"
+              height="250"
+            />Chat Bot !</a
+          >
+        </button>
+      </div>
+      <div>
+        <h3 class="text-4xl mb-10 text-blue-300 ml-20 font-semibold">
+          Registrate aqui!
+        </h3>
+        <div class="w-full h-auto mx-12">
+          <div class="mb-20 text-blue-300 text-2xl">
+            <label for="fname"> Nombre:</label><br />
+            <input tipe="text" id="fname" name="fname" /><br /><br />
+            <label for="barrio"> Barrio:</label><br />
+            <input tipe="text" id="barrio" name="barrio" /><br /><br />
+            <label for="number"> Numero:</label><br />
+            <input tipe="number" id="number" name="number" /><br /><br />
+            <button
+              class="text-cyan-900 text-2xl inline-block bg-blue-50 rounded-full px-3 py-1 font-semibold"
+              type="button"
+            >
+              <a href="wa.me/595982363068" target="_blank">Enviar</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-blue-50">
+      Penguin Academy - Bootcamp 9 - S.I.A.T.I.
+    </footer>
   </body>
 </html>
