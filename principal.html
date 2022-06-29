@@ -5,27 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>S.I.A.T.I.</title>
+    <title>¿Quienes somos?</title>
     <script>
       //para la tarjeta
       tailwind.config = {
         theme: {
           extend: {
             backgroundImage: {
-              monchi: "url('../img/leonb.gif')",
-              mayra: "url('../img/mayra.png')",
-              ricardo: "url('../img/ricardo.png')",
-              mica: "url('../img/mica.png')",
-              jannick: "url('../img/jannick.png')",
-              gabi: "url('../img/gabi.png')",
-              enri: "url('../img/enrimodel.png')",
-              joselo: "url('../img/joselo.png')",
+              monchi: "url('../img/Angel.jpeg')",
+              mayra: "url('../img/Mayra.jpeg')",
+              ricardo: "url('../img/Ricardo.jpeg')",
+              mica: "url('../img/Mica.jpeg')",
+              jannick: "url('../img/Jannick2.png')",
+              gabi: "url('../img/Gaby.jpeg')",
+              enri: "url('../img/Enri.jpeg')",
+              joselo: "url('../img/Joselo.jpeg')",
+              grupo: "url('../img/grupo.jpeg')",
+              logo: "url('../img/logo.jpeg')",
             },
           },
         },
       };
     </script>
   </head>
+  <header>
+    <div class="grid grid-cols-3 text-blue-50 text-2xl mx-20 my-5">
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/siati.html"
+        target="_blank"
+        >Inicio</a
+      >
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/how_it_woks.html"
+        target="_blank"
+        >¿Como funciona?</a
+      >
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/zones.html"
+        target="_blank"
+        >Zonas de riesgo</a
+      >
+    </div>
+  </header>
   <body class="bg-cyan-900 w-full">
     <style>
       #somos {
@@ -33,36 +57,37 @@
         margin-right: 35px;
       }
     </style>
-    <div class="flex flex-col justify-center items-center mx-24">
+    <div class="flex flex-col justify-center items-center">
       <h1
         class="text-8xl text-center mt-14 mb-14 text-blue-200 underlinedecoration-solid"
       >
         ¿Quiénes Somos?
       </h1>
-      <p id="somos" class="text-justify text-2xl text-amber-50">
+      <p id="somos" class="text-justify text-2xl text-amber-50 mx-20">
         Somos estudiantes paraguayos de <b>Penguin Academy</b>. Instituto que se
-        dedica a promover conocimientos de programación. mediante esto, estamos
-        creando una manera de mitigar los danos en las zonas mas afectadas por
+        dedica a promover conocimientos de programación. Mediante esto, estamos
+        creando una manera de mitigar los daños en las zonas mas afectadas por
         las crecidas del rio Paraguay en Asunción.
       </p>
-      <div class="mt-14 mb-14 mx-24 flex flex-row space-x-8">
+      <div class="mt-14 mb-14 flex flex-row space-x-6">
         <img
-          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-1/3"
-          src="https://c8.alamy.com/compes/w504wn/equipo-de-programadores-que-trabajan-en-la-oficina-w504wn.jpg"
-          alt="Lokillo"
+          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-100"
+          src="img/logo.jpeg"
+          alt="Logo S.I.A.T.I."
         />
 
         <img
-          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-1/3"
-          src="https://previews.123rf.com/images/puhhha/puhhha1802/puhhha180200810/96381581-equipo-de-programadores-que-trabajan-en-la-computadora-en-la-oficina-j%C3%B3venes-hermosas-personas-traba.jpg"
-          alt="trbajo grupal papi"
+          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-100"
+          src="img/grupo.jpeg"
+          alt="Foto del grupo"
         />
 
-        <img
-          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-1/3"
-          src="https://c.tenor.com/U9qt-K3WP0cAAAAd/sadiafurukawa-pataburra.gif"
-          alt="Jannick ChatBot"
-        />
+        <button><a href="https://penguin.academy/dl/Principal" target="_blank"><img
+          class="transition-all hover:-translate-y-2 hover:translate-x-2 rounded-3xl object-cover h-80 w-100"
+          src="https://media-exp1.licdn.com/dms/image/C560BAQF3dBw2H85lNw/company-logo_200_200/0/1551455455504?e=2147483647&v=beta&t=P3XABxt5zWUsl1a5xcPBnwSeeJkkh15oFW75KkGp8eg"
+          alt="Penguin Academy"
+          />
+        </button>
       </div>
     </div>
     <h1
@@ -71,7 +96,7 @@
       Desarrolladores del proyecto:
     </h1>
     <!-- Profiles Group ONE -->
-    <div class="mb-14 mx-24 h-80 w-auto flex flex-row space-x-36">
+    <div class="mb-14 ml-20 h-80 w-auto flex flex-row space-x-20">
       <!-- Profile Monchi -->
       <div
         class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
@@ -80,8 +105,8 @@
           class="bg-monchi h-3/5 w-full bg-cover rounded-t-md shadow-md"
         ></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Monchi</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Angel Cardozo</p>
+          <p class="text-white text-sm">Ing. Agronomo<br>Locutor de radio<br>Mcs. en Oratoria</p>
         </div>
       </div>
       <!-- Profile end Monchi -->
@@ -94,8 +119,8 @@
           class="bg-mayra h-3/5 w-full bg-cover rounded-t-md shadow-md"
         ></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Mayra</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Mayra Gomez</p>
+          <p class="text-white text-sm">Ing. Comercial<br>Lic. en Administracion de Empresas<br>Futura Sra. Arzamendia</p>
         </div>
       </div>
       <!-- Profile end Mayra -->
@@ -104,10 +129,12 @@
       <div
         class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
       >
-        <div class="bg-enri h-3/5 w-full bg-cover rounded-t-md shadow-md"></div>
+        <div
+          class="bg-ricardo h-3/5 w-full bg-cover rounded-t-md shadow-md"
+        ></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Ricardo</p>
-          <p class="text-white text-sm"><b>Ocupacion:</b> Ing. Agronomo.</p>
+          <p class="text-xl text-white font-bold">Ricardo Gimenez</p>
+          <p class="text-white text-sm">Ing. Comercial<br>Astronauta</p>
         </div>
       </div>
       <!-- Profile end Ricardo -->
@@ -115,15 +142,15 @@
     <!-- Profiles gruop end ONE -->
 
     <!-- Profiles Group TWO -->
-    <div class="mb-14 mx-24 h-80 w-full flex flex-row space-x-36">
+    <div class="mb-14 ml-20 h-80 w-auto flex flex-row space-x-20">
       <!-- Profile Mica -->
       <div
         class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
       >
         <div class="bg-mica h-3/5 w-full bg-cover rounded-t-md shadow-md"></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Mica</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Mica Fernandez</p>
+          <p class="text-white text-sm">Estudiante de la carrera Tecnologia de Produccion</p>
         </div>
       </div>
       <!-- Profile end Mica -->
@@ -136,8 +163,8 @@
           class="bg-jannick h-3/5 w-full bg-cover rounded-t-md shadow-md"
         ></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Jannick</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Jannick Kravetz</p>
+          <p class="text-white text-sm">Ing. Civil<br>Novio de Silvi</p>
         </div>
       </div>
       <!-- Profile end Jannick -->
@@ -148,50 +175,63 @@
       >
         <div class="bg-gabi h-3/5 w-full bg-cover rounded-t-md shadow-md"></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Gabi</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Gaby Valdez</p>
+          <p class="text-white text-sm">Ing. en Marketing<br>Ing. Comercial<br>"Lo de Gerardo"</p>
         </div>
       </div>
       <!-- Profile end Gabi -->
     </div>
     <!-- Profiles gruop end TWO -->
     <h1
-      class="text-4xl text-center mt-32 mb-14 text-blue-200 underlinedecoration-solid"
+      class="text-4xl text-center mt-32 text-blue-200 underlinedecoration-solid"
     >
       Coaches y mentores del proyecto:
     </h1>
     <!-- Profiles Couch  -->
-    <div class="mt-14 mb-36 mx-52 h-80 w-100 flex flex-row space-x-96">
+    <div class="mt-14 mb-32 mx-32 h-80 w-100 flex flex-row space-x-96">
       <!-- Profile Enri -->
       <div
         class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
       >
         <div class="bg-enri h-3/5 w-full bg-cover rounded-t-md shadow-md"></div>
         <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Enri</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+          <p class="text-xl text-white font-bold">Enrique Zarate</p>
+          <p class="text-white text-sm">Coach</p>
         </div>
       </div>
       <!-- Profile end Enri -->
 
       <!-- Profile Joselo -->
       <div
-        class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
+        class="w-80 h-80 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"r
       >
         <div
           class="bg-joselo h-3/5 w-full bg-cover rounded-t-md shadow-md"
         ></div>
-        <div class="bg-green-600 h-2/5 w-full rounded-b-md p-3">
-          <p class="text-xl text-white font-bold">Joselo</p>
-          <p class="text-white text-sm">Esto es Noruega bro</p>
+        <div class="bg-emerald-700 h-2/5 w-full rounded-b-md p-3">
+          <p class="text-xl text-white font-bold">Rodrigo Gonzalez</p>
+          <p class="text-white text-sm">Mentor</p>
         </div>
       </div>
       <!-- Profile end Joselo -->
     </div>
     <!-- Profiles gruop end ONE -->
-    <footer class="mb-14 ml-20 text-white">
-      Made in
-      <b>@CRYPTOCOMPANY of RICH VILLAGE ____ <i>copyright reserved</i></b>
+    <div class="text-center mb-12">
+      <button
+        class="text-cyan-50 text-md bg-cyan-600 rounded-full px-3 py-1 font-semibold hover:bg-cyan-700"
+        type="button"
+      >
+        <a href="http://127.0.0.1:5500/siati.html" target="_self"
+          >Volver a la pagina de inicio</a
+        >
+      </button>
+    </div>
+    <footer class="text-blue-50 text-2xl">
+      Penguin Academy - Bootcamp 9 - S.I.A.T.I.
+      <marquee scrolldelay="200">
+        Enrique Zarate - Joselo Gonzalez - Jannick Kravetz - Micaela Fernandez -
+        Ricardo Gimenez - Angel Cardozo - Gabriela Valdez - Mayra Gomez</marquee
+      >
     </footer>
   </body>
 </html>
