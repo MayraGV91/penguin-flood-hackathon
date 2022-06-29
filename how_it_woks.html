@@ -17,8 +17,10 @@
     Sistema Inteligente de Alerta Temprana de Inundaciones
   </h1>
   <body class="bg-cyan-900">
-    <h1 class="my-10 text-4xl text-blue-300 text-center">¿Como funciona?</h1>
-    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+    <h1 class="text-blue-300 text-center my-12 sm: md:text-3xl lg:text-4xl">
+      ¿Como funciona?
+    </h1>
+    <div class="text-justify mx-28 grid grid-cols-2 text-blue-50 text-2xl">
       <p>
         Nuestro trabajo consiste en alertar a la poblacion sobre la crecida del
         rio, cuando este sobrepasa los niveles que pueden afectar a las
@@ -40,8 +42,8 @@
         height="900"
       />
     </div>
-    <h1 class="my-10 text-4xl text-blue-300 text-center">A.P.I.</h1>
-    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+    <h1 class="my-12 text-4xl text-blue-300 text-center">A.P.I.</h1>
+    <div class="text-justify mx-28 grid grid-cols-2 text-blue-50 text-2xl">
       <p>
         Las API son mecanismos que permiten a dos componentes de software
         comunicarse entre sí mediante un conjunto de definiciones y protocolos.
@@ -62,8 +64,10 @@
         height="800"
       />
     </div>
-    <h1 class="my-10 text-4xl text-blue-300 text-center">Chat Bot</h1>
-    <div class="mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+    <h1 class="my-12 text-4xl text-blue-300 text-center">Chat Bot</h1>
+    <div
+      class="text-justify my-16 mx-28 grid grid-cols-2 text-blue-50 text-2xl"
+    >
       <img
         class="mt-10"
         src="https://cdn-icons-png.flaticon.com/512/2040/2040946.png"
@@ -86,20 +90,22 @@
         los usuarios que quieran contactar contigo a cualquier hora del día.
       </p>
     </div>
-    <div class="grid grid-cols-2 my-20">
-      <div class="my-10 text-center">
-        <button class="text-blue-50 text-2xl" type="button">
-          <a href="wa.me/595982363068" target="_blank"
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
-              width="250"
-              height="250"
-            />Chat Bot !</a
-          >
+    <div class="grid grid-cols-2">
+      <div class="text-center mx-48 mb-20">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+          width="250"
+          height="250"
+        />
+        <button
+          class="my-10 text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300"
+          type="button"
+        >
+          <a href="wa.me/595982363068" target="_blank">Envia un mensaje!</a>
         </button>
       </div>
       <div>
-        <h3 class="text-4xl mb-10 text-blue-300 ml-20 font-semibold">
+        <h3 class="text-4xl mb-10 text-blue-300 ml-8 font-semibold">
           Registrate aqui!
         </h3>
         <div class="w-full h-auto">
@@ -111,7 +117,7 @@
             <label for="number"> Numero:</label><br />
             <input tipe="number" id="number" name="number" /><br /><br />
             <button
-              class="text-cyan-900 text-2xl inline-block bg-blue-50 rounded-full px-3 py-1 font-semibold"
+              class="text-cyan-900 text-2xl inline-block bg-blue-50 rounded-full px-3 py-1 font-semibold ml-36 hover:bg-sky-300"
               type="button"
             >
               <a href="wa.me/595982363068" target="_blank">Enviar</a>
@@ -120,8 +126,22 @@
         </div>
       </div>
     </div>
-    <footer class="text-blue-50">
+    <div class="text-center mb-12">
+      <button
+        class="text-cyan-50 text-md bg-cyan-600 rounded-full px-3 py-1 font-semibold hover:bg-cyan-700"
+        type="button"
+      >
+        <a href="wa.me/595982363068" target="_self"
+          >Volver a la pagina de inicio</a
+        >
+      </button>
+    </div>
+    <footer class="text-blue-50 text-2xl">
       Penguin Academy - Bootcamp 9 - S.I.A.T.I.
+      <marquee scrolldelay="200">
+        Enrique Zarate - Joselo Gonzalez - Jannick Kravetz - Micaela Fernandez -
+        Ricardo Gimenez - Angel Cardozo - Gabriela Valdez - Mayra Gomez</marquee
+      >
     </footer>
   </body>
 </html>
