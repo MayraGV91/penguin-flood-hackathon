@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add a polygon to a map using a GeoJSON source</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // TO MAKE THE MAP APPEAR YOU MUST
+      // ADD YOUR ACCESS TOKEN FROM
+      // https://account.mapbox.com
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZW5yaS1weSIsImEiOiJjbDR4cGoyY3Ixc2NyM2Nxbmk1cG9oODVtIn0.mAcDsukCaC9ndWJiDKABgw";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/light-v10", // style URL
+        center: [-57.6033, -25.2518], // starting position
+        zoom: 12, // starting zoom
+      });
+
+      map.on("load", () => {
+        // Add a data source containing GeoJSON data.
+        map.addSource("maine", {
+          type: "geojson",
+          data: {
+            type: "Feature",
+            geometry: {
+              type: "Polygon",
+              // These coordinates outline Maine.
+              coordinates: [
+                // [
+                //   [-57.6077, -25.2649],
+                //   [-57.6081, -25.2664],
+                //   [-57.6075, -25.2671],
+                //   [-57.6069, -25.2679],
+                //   [-57.6069, -25.2691],
+                //   [-57.6061, -25.2696],
+                //   [-57.6014, -25.2652],
+                //   [-57.6027, -25.2655],
+                //   [-57.6045, -25.2648],
+                //   [-57.6045, -25.2656],
+                //   [-57.607, -25.2632],
+                // ],
+                // [
+                //   [-57.6628, -25.3016],
+                //   [-57.6658, -25.3015],
+                //   [-57.6673, -25.3031],
+                //   [-57.6673, -25.3037],
+                //   [-57.6693, -25.3076],
+                //   [-57.6708, -25.3127],
+                //   [-57.6701, -25.3172],
+                //   [-57.6616, -25.3172],
+                //   [-57.6621, -25.3138],
+                //   [-57.6637, -25.3111],
+                //   [-57.6637, -25.3082],
+                //   [-57.6642, -25.3055],
+                //   [-57.6641, -25.3031],
+                // ],
+                [
+                  [-57.6607, -25.3161],
+                  [-57.6571, -25.3196],
+                  [-57.6587, -25.3221],
+                  [-57.6587, -25.3239],
+                  [-57.6581, -25.326],
+                  [-57.6548, -25.3274],
+                  [-57.6503, -25.3265],
+                  [-57.6486, -25.3283],
+                  [-57.6443, -25.3255],
+                  [-57.6449, -25.3233],
+                  [-57.6479, -25.3208],
+                  [-57.6487, -25.3166],
+                  [-57.6512, -25.3149],
+                  [-57.6541, -25.3128],
+                ],
+              ],
+            },
+          },
+        });
+
+        // Add a new layer to visualize the polygon.
+        map.addLayer({
+          id: "maine",
+          type: "fill",
+          source: "maine", // reference the data source
+          layout: {},
+          paint: {
+            "fill-color": "#0080ff", // blue color fill
+            "fill-opacity": 0.5,
+          },
+        });
+        // Add a black outline around the polygon.
+        map.addLayer({
+          id: "outline",
+          type: "line",
+          source: "maine",
+          layout: {},
+          paint: {
+            "line-color": "#000",
+            "line-width": 3,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
