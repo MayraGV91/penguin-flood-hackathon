@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              enri: "url('../img/profile1.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="w-52 h-64 shadow-lg mt-6 rounded-md flex-none transition-all hover:-translate-y-2 hover:translate-x-2 hover:shadow-2xl"
+    >
+      <div class="bg-enri h-3/5 w-full bg-cover rounded-t-md shadow-md"></div>
+      <div class="bg-green-600 h-2/5 w-full rounded-b-md p-3">
+        <p class="text-xl text-white font-bold">Norway</p>
+        <p class="text-white text-sm">Esto es Noruega bro</p>
+      </div>
+    </div>
+  </body>
+</html>
