@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <!-- Leaflet end -->
+    <title>Zonas de riesgo PY</title>
+    <style>
+      #map {
+        height: 80vh;
+        width: 65rem;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        
+      }
+    </style>
+  </head>
+  <body class="bg-cyan-900">
+    <h1
+      class="text-6xl text-center mt-14 mb-14 text-blue-200 underlinedecoration-solid"
+    >
+      Cuales son las zonas de riesgo en asuncion?
+    </h1>
+    <div>
+      
+        <p class="mx-80 text-justify text-2xl text-blue-50">
+          En el siguiente mapa estan marcados en poligonos los puntos
+          criticos o zonas de riesgo de inundacion que fueron investigadas
+          actualmente por el equipo de Slytherin de
+          <b
+            ><i>Penguin Academy.</i></b
+          >
+        </p>
+      </div>
+    </div>
+    </div>
+    <div>
+      <div class="z-[0] rounded-3xl border-dashed border-2 border-sky-500 border-8" id="map"></div>
+    </div>
+    <script>
+      navigator.geolocation.getCurrentPosition((position) => {
+        const currentLocation = [
+          position.coords.latitude,
+          position.coords.longitude,
+        ];
+
+        var map = L.map("map").setView(currentLocation, 12);
+
+        // Agregamos nuestro layer (imagen del mapa)
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "© OpenStreetMap",
+        }).addTo(map);
+
+        const allPolygon = [
+          [
+            [-25.2518, -57.6033],
+            [-25.2528, -57.6018],
+            [-25.2543, -57.6014],
+            [-25.2536, -57.5978],
+            [-25.2525, -57.5984],
+            [-25.2487, -57.5995],
+            [-25.2497, -57.6025],
+            [-25.2507, -57.604],
+          ],
+          [
+            [-25.2649, -57.6077],
+            [-25.2664, -57.608],
+            [-25.2671, -57.6075],
+            [-25.2679, -57.6069],
+            [-25.2691, -57.6069],
+            [-25.2696, -57.6061],
+            [-25.2652, -57.6014],
+            [-25.2655, -57.6027],
+            [-25.2648, -57.6045],
+            [-25.2656, -57.6045],
+            [-25.2632, -57.607],
+          ],
+          [
+            [-25.3016, -57.6628],
+            [-25.3015, -57.6658],
+            [-25.3031, -57.6673],
+            [-25.3037, -57.6673],
+            [-25.3076, -57.6693],
+            [-25.3127, -57.6708],
+            [-25.3172, -57.6701],
+            [-25.3172, -57.6616],
+            [-25.3138, -57.6621],
+            [-25.3111, -57.6637],
+            [-25.3082, -57.6637],
+            [-25.3055, -57.6642],
+            [-25.3037, -57.664],
+          ],
+          [
+            [-25.3161, -57.6607],
+            [-25.3196, -57.6571],
+            [-25.3221, -57.6587],
+            [-25.3239, -57.6587],
+            [-25.326, -57.658],
+            [-25.3274, -57.6548],
+            [-25.3265, -57.6503],
+            [-25.3283, -57.6486],
+            [-25.3255, -57.6443],
+            [-25.3233, -57.6449],
+            [-25.3208, -57.6479],
+            [-25.3166, -57.6487],
+            [-25.3149, -57.6512],
+            [-25.3128, -57.6541],
+          ],
+          [
+            [-25.3326, -57.6448],
+            [-25.3345, -57.6458],
+            [-25.3365, -57.6468],
+            [-25.338, -57.645],
+            [-25.3398, -57.6441],
+            [-25.338, -57.638],
+            [-25.3365, -57.6398],
+            [-25.3347, -57.6408],
+            [-25.3312, -57.6413],
+            [-25.3309, -57.6443],
+          ],
+        ];
+        for (cadaPolygon of allPolygon) {
+          console.log(cadaPolygon);
+          L.polygon(cadaPolygon).addTo(map);
+        }
+      });
+    </script>
+    <p class="z-[100]" >hola</p>
+  </body>
+</html>
