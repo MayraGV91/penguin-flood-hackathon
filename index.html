@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.I.A.T.I.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      //para la tarjeta
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              alerta: "url('../penguin-flood-hackathon-main/penguin-flood-hackathon-main/img/zyro-image.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <header>
+    <div class="grid grid-cols-3 text-blue-50 text-2xl mx-20 my-5">
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/penguin-flood-hackathon-main/penguin-flood-hackathon-main/principal.html"
+        target="_self"
+        >¿Quienes somos?</a
+      >
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/penguin-flood-hackathon-main/penguin-flood-hackathon-main/how_it_woks.html"
+        target="_self"
+        >¿Como funciona?</a
+      >
+      <a
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300 text-center"
+        href="http://127.0.0.1:5500/penguin-flood-hackathon-main/penguin-flood-hackathon-main/zones.html"
+        target="_self"
+        >Zonas de riesgo</a
+      >
+    </div>
+  </header>
+  <h1 class="my-14 text-6xl text-center text-blue-200">
+    Bienvenid@ a S.I.A.T.I.!
+  </h1>
+  <body class="bg-cyan-900">
+    <div class="text-justify mx-28 grid grid-cols-2 text-blue-50 text-2xl">
+      <div class="ml-10 bg-alerta bg-cover w-64 h-96"></div>
+      <p>
+        El objetivo de este proyecto es mitigar las consecuencias de las
+        inundaciones fluviales mediante la alerta temprana a los pobladores de
+        las zonas ribereñas.<br /><br />
+        Con esto, se espera que las personas que pueden ser afectadas por las
+        crecidas, sean advertidas con suficiente anterioridad de una posible
+        inundacion, para que asi puedan tomar medidas preventivas y evitar
+        mayores daños a su propiedad.
+      </p>
+    </div>
+    <div class="text-center my-20">
+      <img
+        class="mx-auto"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+        width="250"
+        height="250"
+      />
+      <button
+        class="text-cyan-900 text-2xl bg-blue-50 rounded-full px-3 py-1 font-semibold hover:bg-sky-300"
+        type="button"
+      >
+        <a href="https://wa.me/595982363068" target="_blank">Registrate aqui!</a>
+      </button>
+    </div>
+    <footer class="text-blue-50 text-2xl">
+      Penguin Academy - Bootcamp 9 - S.I.A.T.I.
+      <marquee scrolldelay="200">
+        Enrique Zarate - Joselo Gonzalez - Jannick Kravetz - Micaela Fernandez -
+        Ricardo Gimenez - Angel Cardozo - Gabriela Valdez - Mayra Gomez</marquee
+      >
+    </footer>
+  </body>
+</html>
